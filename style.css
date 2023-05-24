@@ -1,0 +1,239 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Lobster+Two&family=Montserrat&family=Oswald&family=Pangolin&family=Poppins:ital@0;1&family=Vina+Sans&display=swap');
+
+/* common style */
+body {
+    background-color: #f3f3ff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+/* players style */
+/* -----------------------------------------
+spacial for section head this one made by ys coder
+----------------------------------------------*/
+.player-sec {
+    background: #fff;
+    padding: 30px;
+    width: 65vw;
+    margin: auto;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+
+
+}
+
+/* -----------------------------------------
+ section head end// this one made by ys coder
+----------------------------------------------*/
+.top-text {
+    margin-top: .2rem;
+    color: #562EFF;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15rem;
+    grid-row-gap: 1rem;
+}
+
+.player {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+hr {
+    border: 1px solid rgb(198, 198, 198);
+}
+
+/*--------------------------------------------------------
+                    top blog styles
+ ----------------------------------------------------------*/
+.top-btext {
+    margin-top: 1rem;
+}
+
+.blog-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1rem
+}
+
+.blog {
+    display: flex;
+    gap: .5em;
+}
+
+.blog img {
+    width: 13em;
+}
+
+.blog-title-texr {
+    width: 14rem;
+}
+
+.blog-title-texr h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.1rem
+}
+
+.writer-name a {
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/* ------------------------- Ys coder
+style for course box
+ ----------------------------------*/
+.cours-sec {
+    background: #fff;
+    padding: 30px;
+    width: 65vw;
+    margin: auto;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+}
+
+.top-btext {
+    margin-top: 1rem;
+}
+
+.course-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+article.course {
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #0000004a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-head {
+    padding: 1em;
+    position: relative;
+}
+
+.course-head h3 {
+    margin-bottom: 0.3em;
+    font-size: 1em;
+    width: 80%;
+
+}
+
+.course-head img {
+    width: 15em;
+}
+
+/*-----------------------
+ icions 
+ -------by ys coder------*/
+.coursr-retandtime {
+    display: flex;
+    align-items: center;
+    width: 19em;
+    justify-content: space-evenly;
+}
+
+.icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon i {
+    color: #ffa125;
+}
+
+/* ----------------------
+time design 
+-------ys coder--------*/
+.timing {
+    display: flex-inline;
+    gap: .3em;
+}
+
+.timing p {
+    background: #ff000011;
+    color: #ff2424;
+    padding: .4em;
+    border-radius: 30px;
+}
+
+/*---------------------
+ mobile resposive
+-----ys coder---------- */
+@media only screen and (max-width:688px) {
+    .player-sec {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .players {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 21px;
+    }
+
+    .blog-box {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-row-gap: 0.5em;
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5em 1em 1em;
+        border-radius: 5px;
+        box-shadow: 0px 0px 4px black;
+        align-items: center;
+    }
+
+    .blog-title-texr h3 {
+        margin: 0.1rem 1rem 1rem;
+    }
+
+    cite.writer-name {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    .cours-sec {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .course-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+    }
+
+    .course {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-head h3 {
+        margin-bottom: 1em;
+    }
+}
